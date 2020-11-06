@@ -2,23 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6fbf58c-d91a-47fa-b0c9-3413869ccf3a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cart/cart.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/context_processors.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/templates/cart/detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orders/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orders/templates/orders/order/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orders/templates/orders/order/created.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orders/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop/templates/shop/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop/templates/shop/product/detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop/templates/shop/product/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fullweb/celery.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/orders/tasks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/website/css/base.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fullweb/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/fullweb/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fullweb/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/fullweb/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fullweb/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/fullweb/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/orders/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/templates/shop/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/templates/shop/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/templates/shop/product/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/templates/shop/product/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/website/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/website/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/website/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +63,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604596123061</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Ubacen shop, samo osnove">
+      <created>1604655276928</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1604655276928</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -75,21 +78,22 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Napravljen hmtl i css" />
-    <option name="LAST_COMMIT_MESSAGE" value="Napravljen hmtl i css" />
+    <MESSAGE value="Ubacen shop, samo osnove" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ubacen shop, samo osnove" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="395" y="0" key="CommitChangelistDialog2" timestamp="1604596122089">
+    <state x="395" y="0" key="CommitChangelistDialog2" timestamp="1604655275666">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="395" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1604596122089" />
+    <state x="395" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1604655275666" />
     <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1604595765424">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604595765424" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1604596204545">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1604655297665">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604596204545" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604655297665" />
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1604596646162">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -102,5 +106,16 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="570" y="319" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1536.824@0.0.1536.824" timestamp="1604595733151" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/website/views.py</url>
+          <line>15</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

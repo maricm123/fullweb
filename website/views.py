@@ -31,3 +31,6 @@ def service(request):
 
 def gallery(request):
     return render(request, 'gallery.html', {})
+
+def shop(request):
+    return render(request, 'base.html', {})

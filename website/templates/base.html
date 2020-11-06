@@ -1,7 +1,6 @@
 {% load static %}
 
 
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -42,16 +41,39 @@
 					<div class="menu">
 						<ul class="nav nav-tabs" role="tablist">
 							<li role="presentation"><a href="{% url 'index' %}">Home</a></li>
+							<li role="presentation"><a href="{% url 'shop' %}">Shop</a></li>
 							<li role="presentation"><a href="{% url 'about' %}">About Us</a></li>
 							<li role="presentation"><a href="{% url 'service' %}">Services</a></li>
 							<li role="presentation"><a href="{% url 'gallery' %}">Gallery</a></li>
 							<li role="presentation"><a href="{% url 'contact' %}">Contact</a></li>
+
 						</ul>
 					</div>
 				</div>
             </div><!--/.container-->
         </nav><!--/nav-->
     </header><!--/header-->
+
+    <div id="subheader">
+      <div class="cart">
+        {% with total_items=cart|length %}
+          {% if total_items > 0 %}
+            Your cart:
+            <a href="{% url "cart:cart_detail" %}">
+              {{ total_items }} item{{ total_items|pluralize }},
+              ${{ cart.get_total_price }}
+            </a>
+          {% else %}
+            Your cart is empty.
+          {% endif %}
+        {% endwith %}
+      </div>
+    </div>
+    <div id="content">
+      {% block content1 %}
+      {% endblock %}
+    </div>
+
 
 {% block content %}
 
